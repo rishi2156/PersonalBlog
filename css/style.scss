@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+//CANVAS
+#vanta {
+  position: fixed;
+  display: block;
+  min-width: 100%;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+//NAVBAR
+.burger {
+  position: fixed;
+  top: 24px;
+  left: 42px;
+  z-index: 1;
+  cursor: pointer;
+  div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+  }
+}
+.menu-container {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  .menu-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    a {
+      padding: 18px;
+      text-decoration: none;
+      font-size: 25px;
+      color: grey;
+      display: block;
+      font-family: "Poppins", sans-serif;
+      transition: all 0.1s ease-in;
+      transition: 0.3s ease-in;
+      &:hover {
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 49px;
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+//END NAVBAR
+
+//HOME
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  height: 100vh;
+  // background-color: yellow;
+}
+#name {
+  // margin-top: 105px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  h1 {
+    font-size: 3.5em;
+    line-height: 20px;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+}
+// .row {
+//   background-color: grey;
+// }
+#location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  div {
+    height: 20px;
+    width: 1.5px;
+    background: white;
+    margin: 0 10px;
+  }
+  span {
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+}
+#image {
+  margin-top: 80px;
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+#intro {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  color: white;
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+#discover {
+  margin-top: 50px;
+}
+//HOME END
+
+//Education
+#education {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  #underlineEdu {
+    height: 2px;
+    width: 25%;
+    background-color: white;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //NAVBAR
+  #name {
+    h1 {
+      font-size: 2.5em;
+      line-height: 20px;
+    }
+    h2 {
+      font-size: 2em;
+    }
+  }
+  //HOME
+  #intro {
+    margin-top: 20px;
+  }
+  //Education
+
+  #education {
+    #underlineEdu {
+      width: 70%;
+    }
+  }
+}

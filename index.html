@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Site</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <div class="menu-container">
+      <span class="closebtn">&times;</span>
+      <div class="menu-content">
+        <a href="#home">HOME</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#">SKILLS</a>
+        <a href="#">GALLERY</a>
+        <a href="#">CONNECT</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="home">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="col-8 offset-2" id="name">
+                <h1>RAMYANIL</h1>
+                <h2>RAHA</h2>
+              </div>
+              <div
+                class="col-12 col-md-8 offset-md-2 text-center"
+                id="location"
+              >
+                <span>KOLKATA</span>
+                <div class="divider"></div>
+                <span>WEST BENGAL</span>
+                <div class="divider"></div>
+                <span>INDIA</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8 col-md-4 offset-md-0" id="image">
+              <img src="image/user.png" alt="USER" height="150px" />
+            </div>
+            <div class="col-8 offset-md-0 text-center" id="intro">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nesciunt modi ad tempora harum! Delectus accusantium sequi
+                repudiandae quibusdam deserunt eos tenetur suscipit omnis
+                impedit voluptate incidunt ea nesciunt eveniet reiciendis magnam
+                magni, assumenda totam quia fugiat odit nisi ducimus. Fuga,
+                atque fugiat blanditiis minima quisquam excepturi illo nam
+                voluptates tempore?
+              </p>
+            </div>
+            <div class="col-12 text-center" id="discover">
+              <a href="#education"
+                ><input
+                  type="button"
+                  class="btn btn-outline-light"
+                  value="Discover More"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center" id="education">
+          <h1>EDUCATION</h1>
+          <div id="underlineEdu"></div>
+        </div>
+      </div>
+      <!-- <div id="page2"></div> -->
+    </div>
+    <div id="vanta"></div>
+
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/vendor/three.r119.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.waves.min.js"></script>
+    <script>
+      VANTA.WAVES({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x90909,
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>

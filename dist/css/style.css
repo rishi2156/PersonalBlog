@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#vanta {
+  position: fixed;
+  display: block;
+  min-width: 100%;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.burger {
+  position: fixed;
+  top: 24px;
+  left: 42px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+}
+
+.menu-container {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.menu-container .menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-container .menu-content a {
+  padding: 18px;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.menu-container .menu-content a:hover {
+  font-size: 30px;
+  color: white;
+}
+
+.menu-container .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 49px;
+  font-size: 40px;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+#name {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+#name h1 {
+  font-size: 3.5em;
+  line-height: 20px;
+}
+
+#name h2 {
+  font-size: 2.5em;
+}
+
+#location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#location div {
+  height: 20px;
+  width: 1.5px;
+  background: white;
+  margin: 0 10px;
+}
+
+#location span {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+#image {
+  margin-top: 80px;
+}
+
+#image img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#intro {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+#intro p {
+  font-family: "Montserrat", sans-serif;
+}
+
+#discover {
+  margin-top: 50px;
+}
+
+#education {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#education h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#education #underlineEdu {
+  height: 2px;
+  width: 25%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #name h1 {
+    font-size: 2.5em;
+    line-height: 20px;
+  }
+  #name h2 {
+    font-size: 2em;
+  }
+  #intro {
+    margin-top: 20px;
+  }
+  #education #underlineEdu {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

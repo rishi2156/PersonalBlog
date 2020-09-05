@@ -19,6 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="burger">
@@ -29,81 +34,85 @@
     <div class="menu-container">
       <span class="closebtn">&times;</span>
       <div class="menu-content">
-        <a href="#home">HOME</a>
-        <a href="#education">EDUCATION</a>
-        <a href="#">SKILLS</a>
-        <a href="#">GALLERY</a>
-        <a href="#">CONNECT</a>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#">SKILLS</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">CONNECT</a></li>
+        </ul>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <!--Home Begin-->
-        <div class="col-12" id="home">
-          <div class="row justify-content-center">
-            <div class="col-12 text-center">
-              <div class="col-8 offset-2" id="name">
-                <h1>RAMYANIL</h1>
-                <h2>RAHA</h2>
+    <div data-spy="scroll" data-target=".menu-content" data-offset="0">
+      <div class="container">
+        <div class="row">
+          <!--Home Begin-->
+          <div class="col-12 pages" id="home">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <div class="col-8 offset-2 text-center" id="name">
+                  <h1>RAMYANIL</h1>
+                  <h2>RAHA</h2>
+                </div>
+                <div
+                  class="col-12 col-md-8 offset-md-2 text-center"
+                  id="location"
+                >
+                  <span>KOLKATA</span>
+                  <div class="divider"></div>
+                  <span>WEST BENGAL</span>
+                  <div class="divider"></div>
+                  <span>INDIA</span>
+                </div>
               </div>
-              <div
-                class="col-12 col-md-8 offset-md-2 text-center"
-                id="location"
-              >
-                <span>KOLKATA</span>
-                <div class="divider"></div>
-                <span>WEST BENGAL</span>
-                <div class="divider"></div>
-                <span>INDIA</span>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-8 col-md-4 offset-md-0" id="image">
+                <img src="image/user.png" alt="USER" height="150px" />
+              </div>
+              <div class="col-8 offset-md-0 text-center" id="intro">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nesciunt modi ad tempora harum! Delectus accusantium sequi
+                  repudiandae quibusdam deserunt eos tenetur suscipit omnis
+                  impedit voluptate incidunt ea nesciunt eveniet reiciendis
+                  magnam magni, assumenda totam quia fugiat odit nisi ducimus.
+                  Fuga, atque fugiat blanditiis minima quisquam excepturi illo
+                  nam voluptates tempore?
+                </p>
+              </div>
+              <div class="col-12 text-center" id="discover">
+                <a href="#education"
+                  ><input
+                    type="button"
+                    class="btn btn-outline-light"
+                    value="Discover More"
+                  />
+                </a>
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-8 col-md-4 offset-md-0" id="image">
-              <img src="image/user.png" alt="USER" height="150px" />
-            </div>
-            <div class="col-8 offset-md-0 text-center" id="intro">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Nesciunt modi ad tempora harum! Delectus accusantium sequi
-                repudiandae quibusdam deserunt eos tenetur suscipit omnis
-                impedit voluptate incidunt ea nesciunt eveniet reiciendis magnam
-                magni, assumenda totam quia fugiat odit nisi ducimus. Fuga,
-                atque fugiat blanditiis minima quisquam excepturi illo nam
-                voluptates tempore?
-              </p>
-            </div>
-            <div class="col-12 text-center" id="discover">
-              <a href="#education"
-                ><input
-                  type="button"
-                  class="btn btn-outline-light"
-                  value="Discover More"
-                />
-              </a>
+          <!--Home End-->
+          <!--Education Begin-->
+          <div class="col-12 text-center pages" id="education">
+            <h1>EDUCATION</h1>
+            <div id="underlineEdu"></div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-3 edu">
+                <img src="image/Blog/1.png" alt="ICSE" />
+              </div>
+              <div class="col-12 col-md-3 edu">
+                <img src="image/Blog/2.png" alt="ISC" />
+              </div>
+              <div class="col-12 col-md-3 edu">
+                <img src="image/Blog/3.png" alt="BTECH" />
+              </div>
             </div>
           </div>
+          <!--Education End-->
         </div>
-        <!--Home End-->
-        <!--Education Begin-->
-        <div class="col-12 text-center" id="education">
-          <h1>EDUCATION</h1>
-          <div id="underlineEdu"></div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-3 edu">
-              <img src="image/Blog/1.png" alt="ICSE" />
-            </div>
-            <div class="col-12 col-md-3 edu">
-              <img src="image/Blog/2.png" alt="ISC" />
-            </div>
-            <div class="col-12 col-md-3 edu">
-              <img src="image/Blog/3.png" alt="BTECH" />
-            </div>
-          </div>
-        </div>
-        <!--Education End-->
+        <!-- <div id="page2"></div> -->
       </div>
-      <!-- <div id="page2"></div> -->
     </div>
     <div id="vanta"></div>
 
@@ -123,11 +132,7 @@
       });
     </script>
     <script src="js/script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"

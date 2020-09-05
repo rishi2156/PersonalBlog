@@ -151,9 +151,29 @@
     background-color: white;
     margin: 0 auto;
   }
+  .row .edu {
+    // height: 100px;
+    // background: red;
+    margin-top: 100px;
+    margin-right: 5px;
+    margin-left: 10px;
+    img {
+      height: 195px;
+    }
+  }
 }
-
+@media screen and (max-width: 1080px) {
+  //TABLET
+  #education {
+    .row .edu {
+      img {
+        height: 150px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
+  //MOBILE
   //NAVBAR
   #name {
     h1 {
@@ -186,8 +206,19 @@
   //Education
 
   #education {
+    h1 {
+      font-size: 1.5em;
+    }
     #underlineEdu {
-      width: 70%;
+      width: 55%;
+    }
+    .row .edu {
+      margin-top: 40px;
+      margin-right: 5px;
+      margin-left: 10px;
+      img {
+        height: 200px;
+      }
     }
   }
 }

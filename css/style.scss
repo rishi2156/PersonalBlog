@@ -171,6 +171,34 @@ body {
     }
   }
 }
+//Skills
+#skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  #underlineSkill {
+    height: 2px;
+    width: 25%;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .skill {
+    // background-color: red;
+    // height: 100px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    img {
+      margin-top: 40px;
+      height: 195px;
+    }
+  }
+}
 @media screen and (max-width: 1079px) {
   //TABLET
   #education {
@@ -235,6 +263,28 @@ body {
       margin-left: 10px;
       img {
         height: 20vh;
+      }
+    }
+  }
+
+  //Skills
+  #skills {
+    h1 {
+      font-size: 1.5em;
+    }
+    #underlineskill {
+      width: 55%;
+    }
+    .skill {
+      // background-color: red;
+      // height: 80px;
+      margin: 10px 10px;
+      img {
+        margin-top: 0;
+        height: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
     }
   }

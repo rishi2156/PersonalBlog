@@ -211,8 +211,55 @@ body {
     }
   }
 }
+//CONNECT
+#connect {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10vh;
+  }
+  h2,
+  h4,
+  h5 {
+    color: white;
+    font-family: "Montserrat";
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  .link {
+    font-size: 3em;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: all 0.1s ease-in;
+    &:hover {
+      color: rgb(141, 138, 138);
+      font-size: 3.2em;
+    }
+  }
+  p {
+    margin-top: 20vh;
+    color: rgba(100, 100, 100, 1);
+  }
+}
 @media screen and (max-width: 1079px) {
   //TABLET
+  #name {
+    h1 {
+      font-size: 2.7em;
+      line-height: 16px;
+    }
+    h2 {
+      font-size: 2.3em;
+    }
+  }
   #education {
     .row .edu {
       img {
@@ -228,7 +275,7 @@ body {
   #name {
     h1 {
       font-size: 2em;
-      line-height: 15px;
+      line-height: 10px;
     }
     h2 {
       font-size: 1.5em;
@@ -304,6 +351,29 @@ body {
       // height: 35vh;
       margin: 10px 10px;
       // padding: 20px;
+    }
+  }
+  //Connect
+  #connect {
+    h1 {
+      font-size: 1.5em;
+    }
+    h2,
+    h4,
+    h5 {
+      font-size: 1em;
+    }
+    a {
+      margin: 10px 0;
+    }
+    .link {
+      font-size: 3em;
+      margin-right: 15px;
+      margin-left: 15px;
+      transition: all 0.1s ease-in;
+      &:hover {
+        font-size: 3.2em;
+      }
     }
   }
 }

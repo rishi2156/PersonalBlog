@@ -267,7 +267,66 @@ body {
   font-family: "Montserrat";
 }
 
+#connect {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#connect h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10vh;
+}
+
+#connect h2,
+#connect h4,
+#connect h5 {
+  color: white;
+  font-family: "Montserrat";
+}
+
+#connect a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+#connect .link {
+  font-size: 3em;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+#connect .link:hover {
+  color: #8d8a8a;
+  font-size: 3.2em;
+}
+
+#connect p {
+  margin-top: 20vh;
+  color: #646464;
+}
+
 @media screen and (max-width: 1079px) {
+  #name h1 {
+    font-size: 2.7em;
+    line-height: 16px;
+  }
+  #name h2 {
+    font-size: 2.3em;
+  }
   #education .row .edu img {
     height: 150px;
   }
@@ -276,7 +335,7 @@ body {
 @media screen and (max-width: 767px) {
   #name h1 {
     font-size: 2em;
-    line-height: 15px;
+    line-height: 10px;
   }
   #name h2 {
     font-size: 1.5em;
@@ -333,6 +392,27 @@ body {
   }
   #gallery .gall {
     margin: 10px 10px;
+  }
+  #connect h1 {
+    font-size: 1.5em;
+  }
+  #connect h2,
+  #connect h4,
+  #connect h5 {
+    font-size: 1em;
+  }
+  #connect a {
+    margin: 10px 0;
+  }
+  #connect .link {
+    font-size: 3em;
+    margin-right: 15px;
+    margin-left: 15px;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+  }
+  #connect .link:hover {
+    font-size: 3.2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

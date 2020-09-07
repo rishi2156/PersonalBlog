@@ -79,8 +79,6 @@ body {
   }
 }
 //END NAVBAR
-// .pages {
-// }
 //HOME
 #home {
   display: flex;
@@ -153,13 +151,9 @@ body {
   h1 {
     color: white;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
   }
-  #underlineEdu {
-    height: 2px;
-    width: 25%;
-    background-color: white;
-    margin: 0 auto;
-  }
+
   .row .edu {
     // height: 100px;
     // background: red;
@@ -181,12 +175,7 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
   }
-  #underlineSkill {
-    height: 2px;
-    width: 25%;
-    background-color: white;
-    margin: 0 auto;
-  }
+
   .skill {
     // background-color: red;
     // height: 100px;
@@ -196,6 +185,29 @@ body {
     img {
       margin-top: 40px;
       height: 195px;
+    }
+  }
+}
+//GALLERY
+#gallery {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .gall {
+    // background-color: red;
+    // height: 100px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    h5 {
+      margin: 5px 0px;
+      color: white;
+      font-family: "Montserrat";
     }
   }
 }
@@ -254,9 +266,6 @@ body {
     h1 {
       font-size: 1.5em;
     }
-    #underlineEdu {
-      width: 55%;
-    }
     .row .edu {
       margin-top: 20px;
       margin-right: 5px;
@@ -272,9 +281,6 @@ body {
     h1 {
       font-size: 1.5em;
     }
-    #underlineskill {
-      width: 55%;
-    }
     .skill {
       // background-color: red;
       // height: 80px;
@@ -286,6 +292,18 @@ body {
         margin-right: auto;
         display: block;
       }
+    }
+  }
+  //GALLERY
+  #gallery {
+    h1 {
+      font-size: 1.5em;
+    }
+    .gall {
+      // background-color: red;
+      // height: 35vh;
+      margin: 10px 10px;
+      // padding: 20px;
     }
   }
 }

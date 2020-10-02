@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow-y: scroll;
+}
+
+#vanta {
+  position: fixed;
+  display: block;
+  min-width: 100%;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.burger {
+  position: fixed;
+  top: 24px;
+  left: 42px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+}
+
+.menu-container {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.menu-container .menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-container .menu-content a {
+  padding: 18px;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.menu-container .menu-content a:hover {
+  font-size: 30px;
+  color: white;
+}
+
+.menu-container .menu-content .current {
+  font-size: 30px;
+  color: white;
+}
+
+.menu-container .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 49px;
+  font-size: 40px;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+#name {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+#name h1 {
+  font-size: 3.5em;
+  line-height: 20px;
+}
+
+#name h2 {
+  font-size: 2.5em;
+}
+
+#location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#location div {
+  height: 20px;
+  width: 1.5px;
+  background: white;
+  margin: 0 10px;
+}
+
+#location span {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+#image {
+  margin-top: 80px;
+}
+
+#image img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#intro {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+#intro p {
+  font-family: "Montserrat", sans-serif;
+}
+
+#discover {
+  margin-top: 50px;
+}
+
+#education {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#education h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+#education .row .edu {
+  margin-top: 100px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+#education .row .edu img {
+  height: 195px;
+}
+
+#skills {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#skills h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#skills .skill {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#skills .skill img {
+  margin-top: 40px;
+  height: 195px;
+}
+
+#gallery {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#gallery h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#gallery .gall {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#gallery .gall h5 {
+  margin: 5px 0px;
+  color: white;
+  font-family: "Montserrat";
+}
+
+#connect {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#connect h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10vh;
+}
+
+#connect h2,
+#connect h4,
+#connect h5 {
+  color: white;
+  font-family: "Montserrat";
+}
+
+#connect a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+#connect .link {
+  font-size: 3em;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+#connect .link:hover {
+  color: #8d8a8a;
+  font-size: 3.2em;
+}
+
+#connect p {
+  margin-top: 20vh;
+  color: #646464;
+}
+
+@media screen and (max-width: 1079px) {
+  #name h1 {
+    font-size: 2.7em;
+    line-height: 16px;
+  }
+  #name h2 {
+    font-size: 2.3em;
+  }
+  #education .row .edu img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #name h1 {
+    font-size: 2em;
+    line-height: 10px;
+  }
+  #name h2 {
+    font-size: 1.5em;
+  }
+  #location span {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 0.6em;
+  }
+  #intro {
+    margin-top: 20px;
+  }
+  #intro p {
+    font-size: 0.6em;
+  }
+  #discover {
+    margin-top: 20px;
+  }
+  #image {
+    margin-top: 40px;
+  }
+  #image img {
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #education h1 {
+    font-size: 1.5em;
+  }
+  #education .row .edu {
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  #education .row .edu img {
+    height: 20vh;
+  }
+  #skills h1 {
+    font-size: 1.5em;
+  }
+  #skills .skill {
+    margin: 10px 10px;
+  }
+  #skills .skill img {
+    margin-top: 0;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #gallery h1 {
+    font-size: 1.5em;
+  }
+  #gallery .gall {
+    margin: 10px 10px;
+  }
+  #connect h1 {
+    font-size: 1.5em;
+  }
+  #connect h2,
+  #connect h4,
+  #connect h5 {
+    font-size: 1em;
+  }
+  #connect a {
+    margin: 10px 0;
+  }
+  #connect .link {
+    font-size: 3em;
+    margin-right: 15px;
+    margin-left: 15px;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+  }
+  #connect .link:hover {
+    font-size: 3.2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

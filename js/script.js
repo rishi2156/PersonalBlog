@@ -47,4 +47,32 @@ $("#discover a").on("click", function (e) {
   }
 });
 
-//SCROLL SPY
+//Scroll reveal
+
+//home
+ScrollReveal().reveal("#name");
+ScrollReveal().reveal("#location", { delay: 500 });
+ScrollReveal().reveal("#discover", { delay: 1500 });
+
+//education
+ScrollReveal().reveal("#eduheading");
+ScrollReveal().reveal("#icse", { delay: 500 });
+ScrollReveal().reveal("#isc", { delay: 1000 });
+ScrollReveal().reveal("#college", { delay: 1500 });
+
+//skills
+ScrollReveal().reveal("#skillheading");
+ScrollReveal().reveal("#java", { delay: 300 });
+ScrollReveal().reveal("#javascript", { delay: 600 });
+ScrollReveal().reveal("#react", { delay: 900 });
+ScrollReveal().reveal("#ps", { delay: 1200 });
+ScrollReveal().reveal("#ai", { delay: 1500 });
+
+//gallery
+ScrollReveal().reveal("#galleryheading");
+
+//Connect
+ScrollReveal().reveal("#connectheading");
+ScrollReveal().reveal(".fa-facebook", { delay: 400 });
+ScrollReveal().reveal(".fa-instagram", { delay: 800 });
+ScrollReveal().reveal(".fa-github", { delay: 1200 });
